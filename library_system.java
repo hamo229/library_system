@@ -20,7 +20,7 @@ public class library_system{
         boolean[] bookStatuses = new boolean[Books];
         int bookCount = 0;
         boolean x=true;
-        while (x=true) {
+        while (x) {
            
             System.out.println("Welcome to the Library Management System !");
             System.out.println("1. Add a Book");
@@ -68,7 +68,7 @@ public class library_system{
                 boolean bookexist = false;
                 if (option == 1) {
                     System.out.print("Enter the book title: ");
-                    String title = input.next();
+                    String title = input.nextLine();
 
                     for (int i = 0; i < bookCount; i++) {
                         if (bookTitles[i].equals(title)) {
